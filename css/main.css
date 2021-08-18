@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Bebas Neue Cyrillic';
+    src: local('Bebas Neue Cyrillic'), local('BebasNeueCyrillic'),
+        url('../fonts/BebasNeueCyrillic.woff2') format('woff2'),
+        url('../fonts/BebasNeueCyrillic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    box-sizing: border-box; /* Задали для всех элементов */
+}
+body {
+    font-family: 'Roboto', sans-serif; /* Подключили шрифт */
+    font-size: 16px; /* Задали размер из макета */
+}
+/* ----- Шапка сайта -----*/
+.header{
+    background-color: #635854; /* Цвет фона */
+    padding-top: 12px; /* Внутренний отступ сверху */
+    padding-bottom: 12px; /* Внутренний отступ снизу */
+    border-bottom: 4px solid #3596F5; /* Сделали обводку снизу */
+    
+}
+.logo{
+    padding-left: 81px; /* Внутренний отступ слева */
+    
+}
+.navbar{
+    max-width: 1280px; /* Задали максимальную длину */
+    margin: auto; /* Посместили элементы по центру контейнера */
+    display: flex; /* Сделали блок гибким*/
+    justify-content: space-between; /* Поставили элементы бок-о-бок */
+    align-items: center; /* Поставили элементы по центру шапки */
+}
+.navbar-menu{
+    margin: 0; /* Убрали внешние отступы */
+    padding: 0; /* Убрали внутренние отступы */
+    list-style: none; /* Убрали точки списка */
+    display: flex;
+    text-align: center; /* Поместили текст по центру */
+}
+.navbar-item{
+    margin: 0 40px;/* Верх и Низ - 0 Право и Лево - 40 */
+}
+.navbar-link{
+    text-decoration: none; /* Убрали подчеркивание */
+    color: #fff; /* Задали цвет */
+}
+.navbar-contacts{
+    text-align: right; /* Выровнили текст по правому краю */
+}
+.navbar-text{
+    display: block; /* Элемент занимает целую строку стал блочным */
+    color: #fff; /* Цвет текста */
+    margin-bottom: 4px; /* Внешний отступ вниз */
+    font-size: 14px; /* Размер шрифта */
+    line-height: 16px; /* Высота строки */
+}
+.navbar-phone{
+    font-weight: 700; /* Задали жирность шрифта */
+    font-size: 17px; /* Задали размер шрифта */
+    line-height: 20px; /* Задали выосоту шрифта  */
+    text-decoration: none; /* Убрали подчеркивание */
+    color: #fff; /* Задали цвет тексту */
+}
+/* ----- Шапка сайта ----- */
+
+
+/* ----- Секция сайта ----- */
+.main{
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 54px;
+    display: flex;
+}
+.main-info{
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-img path{
+    opacity: 0;
+}
+.home-img path:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.counter-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.counter-button{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.arrow-down{
+    transform: rotateX(180deg);
+}
+.main-title{
+    font-family: 'Bebas Neue Cyrillic', sans-serif;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 44px;
+    color: #635854;
+    margin: 0;
+    margin-top: 65px;
+}
+.counter{
+    font-family: 'Bebas Neue Cyrillic', sans-serif;
+    font-size: 125px;
+    color: #635854;
+}
+.button-primary{
+    background-color: #3596F5;
+    color:#fff;
+    border: none;
+    border-radius: 6px;
+    padding: 16px 36px;
+    cursor: pointer;
+    margin-bottom: 65px;
+
+}
+/* ----- Секция сайта ----- */
