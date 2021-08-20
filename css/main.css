@@ -1,0 +1,131 @@
+@font-face { /* Подключили шрифты через стронние сервисы и файлы */
+    font-family: 'Bebas Neue Cyrillic';
+    src: local('Bebas Neue Cyrillic'), local('BebasNeueCyrillic'),
+        url('../fonts/BebasNeueCyrillic.woff2') format('woff2'),
+        url('../fonts/BebasNeueCyrillic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    box-sizing: border-box; /* Учитывание границ и отступов для всех элементов сайта */
+}
+body {
+    font-family: 'Roboto', sans-serif; /* Подключили шрифт */
+    font-size: 16px; /* Задали размер из макета */
+}
+/* ----- Шапка сайта -----*/
+.header{
+    background-color: #635854; /* Цвет фона */
+    padding-top: 12px; /* Внутренний отступ сверху */
+    padding-bottom: 12px; /* Внутренний отступ снизу */
+    border-bottom: 4px solid #3596F5; /* Сделали обводку снизу */
+    
+}
+.logo{
+    padding-left: 81px; /* Внутренний отступ слева */
+    
+}
+.navbar{
+    max-width: 1280px; /* Задали максимальную длину */
+    margin: auto; /* Посместили элементы по центру контейнера */
+    display: flex; /* Сделали блок гибким*/
+    justify-content: space-between; /* Поставили элементы бок-о-бок */
+    align-items: center; /* Поставили элементы по центру шапки */
+}
+.navbar-menu{
+    margin: 0; /* Убрали внешние отступы */
+    padding: 0; /* Убрали внутренние отступы */
+    list-style: none; /* Убрали точки списка */
+    display: flex;
+    text-align: center; /* Поместили текст по центру */
+}
+.navbar-item{
+    margin: 0 40px;/* Верх и Низ - 0 Право и Лево - 40 */
+}
+.navbar-link{
+    text-decoration: none; /* Убрали подчеркивание */
+    color: #fff; /* Задали цвет */
+}
+.navbar-contacts{
+    text-align: right; /* Выровнили текст по правому краю */
+}
+.navbar-text{
+    display: block; /* Элемент занимает целую строку стал блочным */
+    color: #fff; /* Цвет текста */
+    margin-bottom: 4px; /* Внешний отступ вниз */
+    font-size: 14px; /* Размер шрифта */
+    line-height: 16px; /* Высота строки */
+}
+.navbar-phone{
+    font-weight: 700; /* Задали жирность шрифта */
+    font-size: 17px; /* Задали размер шрифта */
+    line-height: 20px; /* Задали выосоту шрифта  */
+    text-decoration: none; /* Убрали подчеркивание */
+    color: #fff; /* Задали цвет тексту */
+}
+/* ----- Шапка сайта ----- */
+
+
+/* ----- Секция сайта ----- */
+.main{
+    max-width: 1280px; /* Задали длину, как и шапке */
+    margin: auto; /* Занять все доступное пространство */
+    margin-top: 54px; /* Внешний отступ сверху */
+    display: flex; /* Делаем блок гибким */
+}
+.main-info{
+    flex-grow: 1; /* Элемент займет все свободное место */
+    text-align: center; /* Выравниваем текст по центру */
+    display: flex; /* Делаем блок гибким */
+    flex-direction: column; /* Располагаем элементы в колонку */
+    justify-content: space-between; /* Прижимаем крайние элементы к краю, а серединный к середине */
+    align-items: center; /* Выравниваем элементы по центру блока */
+}
+.home-img path{
+    opacity: 0; /* Включили прозрачность для элемента, чтобы не были видны изначально */
+}
+.home-img path:hover{ /* Псевдокласс - наведение */
+    opacity: 1; /* При наведении прозрачность пропадает отдельно для каждого элемента */
+    cursor: pointer; /* Дизайн для курсора "Пальчик" */
+}
+path.current-floor{
+    opacity: 1 ;
+}
+.counter-group{
+    display: flex; /* Гибкий блок */
+    flex-direction: column; /* Располагаем элементы в колонку */
+    align-items: center; /* Выравниваем элементы по центру блока */
+}
+.counter-button{
+    background-color: #fff; /* Цвет фона  */
+    border: none; /* Отключаем обводку */
+    cursor: pointer; /* Дизайн для курсора "Пальчик" */
+}
+.arrow-down{
+    transform: rotateX(180deg); /* Разворачиваем изображение по оси X на 180 градусов */
+}
+.main-title{
+    font-family: 'Bebas Neue Cyrillic', sans-serif; /* Подключаем шрифт */
+    font-weight: normal; /* Задаем  ему жирность */
+    font-size: 37px; /* Задаем ему размер */
+    line-height: 44px; /* Задаем ему высоту строки */
+    color: #635854; /* Задаем ему цвет */
+    margin: 0; /* Убираем все внешние отступы */
+    margin-top: 65px; /* Делаем внешний отступ сверху */
+}
+.counter{
+    font-family: 'Bebas Neue Cyrillic', sans-serif; /* Подключаем шрифт */
+    font-size: 125px; /* Задаем размер шрифту */
+    color: #635854; /* Задаем цвет шрифту */
+}
+.button-primary{
+    background-color: #3596F5; /* Задаем цвет фона кнопки */
+    color:#fff; /* Цвет текста */
+    border: none; /* Убираем обводку */
+    border-radius: 6px; /* Закругляем кнопку */
+    padding: 16px 36px; /* Внутренние отступы сверху-снизу и слева-справа */
+    cursor: pointer;  /* Дизайн для курсора "Пальчик" */ 
+    margin-bottom: 65px; /* Внешний отступ снизу */
+}
+/* ----- Секция сайта ----- */
